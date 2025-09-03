@@ -1,0 +1,58 @@
+:root{
+  --bg:#0e1116; --panel:#151a23; --muted:#a6adbb; --txt:#e7e9ee; --brand:#7c5cff; --brand2:#00d2d2; --card:#111826; --b:#1f2937;
+  --shadow:0 10px 30px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:var(--bg);color:var(--txt)}
+a{color:inherit;text-decoration:none}
+.container{max-width:1080px;margin:0 auto;padding:24px}
+header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(10px);background:color-mix(in oklab, var(--bg) 85%, transparent);border-bottom:1px solid #1e293b;z-index:20}
+nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.3px}
+.brand .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand2))}
+.navlinks{display:flex;gap:18px;align-items:center}
+.navlinks a{opacity:.9}
+.btn, button{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid #263044;background:#121826;border-radius:12px;color:#e6e9f2;box-shadow:var(--shadow)}
+.btn:hover{transform:translateY(-1px)}
+.ghost{background:transparent;border-color:#253043}
+.primary{background:linear-gradient(135deg,var(--brand),var(--brand2));border:none;color:#0b0f15}
+.grid{display:grid;gap:16px}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;padding:32px 0}
+.card{background:linear-gradient(180deg,var(--panel),#0f141d);border:1px solid #1e293b;border-radius:16px;padding:20px;box-shadow:var(--shadow)}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+.kpi{background:var(--card);border:1px solid #1f2a3a;border-radius:14px;padding:14px}
+h1{font-size:44px;line-height:1.1;margin:0 0 12px}
+h2{font-size:26px;margin:26px 0 10px}
+h3{margin:0 0 6px}
+p{color:var(--muted);line-height:1.65}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.chip{padding:6px 10px;border:1px solid #263044;border-radius:999px;font-size:13px;background:#0f1520}
+.section{margin-top:26px}
+.projects{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.project{grid-column:span 12;background:var(--card);border:1px solid #1f2a3a;border-radius:16px;padding:18px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.project .meta{display:flex;justify-content:space-between;align-items:center;margin-top:8px}
+.project .tags{display:flex;gap:8px;flex-wrap:wrap}
+.project .tags span{font-size:12px;opacity:.85;border:1px solid #2a394f;padding:4px 8px;border-radius:999px}
+.stack{display:flex;gap:10px;flex-wrap:wrap}
+footer{margin:40px 0 60px;display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px dashed #263044;padding-top:16px}
+.mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace}
+.pill{border:1px solid #2a394f;border-radius:999px;padding:4px 10px;font-size:12px;opacity:.9}
+.avatar{width:100px;height:100px;border-radius:50%;border:3px solid #2b3750;box-shadow:var(--shadow)}
+.mobile-toggle{display:none}
+@media (max-width: 900px){
+  .hero{grid-template-columns:1fr}
+  .project{grid-template-columns:1fr}
+  .navlinks{display:none}
+  .mobile-toggle{display:inline-flex}
+}
+/* simple timeline */
+.timeline{border-left:1.5px solid #2a394f;margin-left:8px;padding-left:14px;display:grid;gap:16px}
+.timeline .item{position:relative}
+.timeline .item:before{content:'';position:absolute;left:-9.5px;top:6px;width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand2))}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+.gradient{background:linear-gradient(135deg,var(--brand),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.cta-row{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
+.two-col{grid-template-columns:repeat(2,1fr)}
+.mt{margin-top:12px}
+.footer-actions{display:flex;gap:10px;align-items:center}
