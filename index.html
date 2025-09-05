@@ -3,228 +3,441 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Abhinav Singh Chauhan — Portfolio</title>
-  <meta name="description" content="Abhinav Singh Chauhan • ML/AI Engineer — Systems, Agents & Scalable MLOps. MS Data Science @ UMD; SME (CDA/ODA) @ Oracle; EdTech Tulna multi‑agent video evaluator; RAG pipelines; Jira Backlog Builder agent." />
-  <meta property="og:title" content="Abhinav — ML/AI Engineer" />
-  <meta property="og:description" content="Systems-minded ML engineer. Agents, retrieval, eval at scale." />
+  <title>Abhinav — ML/AI Systems</title>
+  <meta name="description" content="Agentic ML systems with rigorous evaluation, retrieval, and production reliability." />
+  <meta property="og:title" content="Abhinav — ML/AI Systems" />
+  <meta property="og:description" content="Calm, reliable agentic systems that plan, retrieve, and prove their work." />
   <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#0e1116" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🚀</text></svg>">
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>✨</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/script.js"></script>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <nav>
-        <a class="brand" href="#home" aria-label="Homepage">
-          <span class="dot" aria-hidden="true"></span>
-          <span>Abhinav</span>
-        </a>
-        <div class="navlinks" role="menubar">
-          <a role="menuitem" href="#projects">Projects</a>
-          <a role="menuitem" href="#experience">Experience</a>
-          <a role="menuitem" href="#writing">Writing</a>
-          <a role="menuitem" href="#contact">Contact</a>
-          <a class="btn ghost" href="https://github.com/abhinavsingh9714" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn primary" href="#contact">Hire Me</a>
-        </div>
-        <button class="mobile-toggle btn ghost" aria-label="Toggle menu" onclick="document.querySelector('.navlinks')?.classList.toggle('open')">☰</button>
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#top"><span class="dot"></span><span><strong>Abhinav Singh Chauhan</strong></span></a>
+      <nav class="links">
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="ext">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main id="home" class="container">
+  <main>
     <!-- Hero -->
     <section class="hero">
-      <div>
-        <p class="pill mono">ML/AI Engineer • Systems & Agents</p>
-        <h1>Building <span class="gradient">agentic</span> ML systems that actually ship.</h1>
-        <p>
-          I’m Abhinav Singh Chauhan — MS Data Science @ UMD (’26). I design production-grade AI systems: multi-agent evaluation for edtech, RAG pipelines, and planning agents that write Jira. Previously, SME (CDA/ODA) @ Oracle Healthcare.
-        </p>
-        <div class="chips">
-          <span class="chip">LangGraph • LangChain</span>
-          <span class="chip">Retrieval • Pinecone</span>
-          <span class="chip">AWS Serverless (S3/SFN/Lambda)</span>
-          <span class="chip">Gemini • OpenAI</span>
-          <span class="chip">PyTorch • CV/NLP</span>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow mono">ML • AI • Agentic Systems • Data Science</p>
+          <!-- <h1>Calm, reliable AI that <span class="grad">plans, retrieves, and proves</span> its work.</h1> -->
+          <h1>Hey, I’m <span class="grad">Abhinav Singh Chauhan</span></h1>
+          <p class="lede">I am a MS Data Science student @ UMD graduating in May 2026. I specialize in designing and deploying end-to-end AI solutions that drive real-world impact.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#work">See my work</a>
+            <a class="btn" href="mailto:abhinavschauhan14@gmail.com">Email me</a>
+            <a class="btn" href="https://www.linkedin.com/in/abhinavsingh9714" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+            <a class="btn" href="https://github.com/abhinavsingh9714" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          </div>
         </div>
-        <div class="cta-row">
-          <a class="btn primary" href="#projects">See Projects</a>
-          <a class="btn ghost" href="mailto:abhinavschauhan14@gmail.com">Email Me</a>
-          <a class="btn ghost" href="https://www.linkedin.com/in/abhinavsingh9714" target="_blank" rel="noopener">LinkedIn</a>
+        <div class="hero-graphic card">
+          <!-- Abstract geometric graphic -->
+          <!-- <svg viewBox="0 0 600 480" class="hero-svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7c5cff" stop-opacity="0.9"/>
+                <stop offset="100%" stop-color="#2ec8c8" stop-opacity="0.9"/>
+              </linearGradient>
+              <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0%" stop-color="#f2b8d1" stop-opacity="0.9"/>
+                <stop offset="100%" stop-color="#7c5cff" stop-opacity="0.9"/>
+              </linearGradient>
+              <filter id="blur">
+                <feGaussianBlur stdDeviation="40" edgeMode="duplicate"/>
+              </filter>
+            </defs>
+            <rect x="40" y="60" width="220" height="140" rx="18" fill="url(#g1)" opacity="0.85"/>
+            <rect x="280" y="120" width="220" height="140" rx="18" fill="url(#g2)" opacity="0.85"/>
+            <circle cx="160" cy="300" r="90" fill="url(#g2)" opacity="0.7" filter="url(#blur)"/>
+            <circle cx="420" cy="330" r="110" fill="url(#g1)" opacity="0.7" filter="url(#blur)"/>
+            <polyline points="70,380 160,300 260,350 360,250 500,320" fill="none" stroke="#0f172a22" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg> -->
+          <svg viewBox="0 0 600 480" class="hero-svg" aria-hidden="true">
+            <defs>
+              <!-- main gradients -->
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%"  stop-color="#7c5cff" stop-opacity="0.9"/>
+                <stop offset="100%" stop-color="#2ec8c8" stop-opacity="0.9"/>
+              </linearGradient>
+              <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0%"  stop-color="#f2b8d1" stop-opacity="0.9"/>
+                <stop offset="100%" stop-color="#7c5cff" stop-opacity="0.9"/>
+              </linearGradient>
+              <!-- avatar ring gradient -->
+              <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%"  stop-color="#7c5cff"/>
+                <stop offset="100%" stop-color="#2ec8c8"/>
+              </linearGradient>
+              <!-- soft blur used by blobs -->
+              <filter id="blur"><feGaussianBlur stdDeviation="40" edgeMode="duplicate"/></filter>
+              <!-- soft outer glow around the ring -->
+              <filter id="ringGlow" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="12" result="b"/>
+                <feMerge>
+                  <feMergeNode in="b"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+              <!-- circle clip for the avatar image -->
+              <!-- tweak cx/cy/r for exact placement/size -->
+              <clipPath id="pfpClip">
+                <circle cx="300" cy="245" r="90"></circle>
+              </clipPath>
+            </defs>
+          
+            <!-- LEFT rounded gradient block -->
+            <rect x="70" y="70" width="220" height="140" rx="24" fill="url(#g1)" opacity=".95"/>
+          
+            <!-- light blurred blobs for depth -->
+            <circle cx="200" cy="320" r="90"  fill="url(#g2)" opacity=".6" filter="url(#blur)"/>
+            <circle cx="430" cy="345" r="110" fill="url(#g1)" opacity=".45" filter="url(#blur)"/>
+            <!-- RIGHT rounded gradient block drawn AFTER the avatar so it overlaps its top-left edge -->
+            <rect x="330" y="120" width="200" height="130" rx="22" fill="url(#g2)" opacity=".95"/>
+          
+            <!-- elegant line on top -->
+            <polyline points="110,380 200,300 300,350 380,250 520,320"
+                      fill="none" stroke="#0f172a22" stroke-width="6"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+
+            <!-- ======== AVATAR (ring + photo + inner ring + glow) ======== -->
+            <!-- gradient ring (thick) -->
+            <circle class="avatar-ring" cx="300" cy="245" r="100" fill="none" stroke="url(#ringGrad)" stroke-width="14" filter="url(#ringGlow)"/>
+            <!-- thin white inside ring for separation -->
+            <circle class="avatar-inner-ring" cx="300" cy="245" r="91" fill="none" stroke="#ffffff" stroke-opacity=".9" stroke-width="3"/>
+            <!-- clipped photo (exact square box = 2r) -->
+            <image class="avatar-image" href="assets/abhinav.JPG"
+                   x="210" y="155" width="180" height="180"
+                   clip-path="url(#pfpClip)" preserveAspectRatio="xMidYMid slice"/>
+            <!-- =========================================================== -->
+          
+            
+          </svg>
+          
         </div>
+      </div>
+
+      <!-- KPI band -->
+      <div class="container kpi-band">
         <div class="kpis">
-          <div class="kpi">
-            <h3>95% ↓</h3>
-            <p class="mono">Manual review time</p>
+          <div class="kpi"><h3>&gt;3 Years</h3><p class="mono">Professional Experience</p></div>
+          <div class="kpi"><h3>&gt;7 Years</h3><p class="mono">Development Experience</p></div>
+          <div class="kpi"><h3>15 +</h3><p class="mono">Projects</p></div>
+        </div>
+      </div>
+      <div class="bg-blob one" aria-hidden="true"></div>
+      <div class="bg-blob two" aria-hidden="true"></div>
+    </section>
+
+    <!-- Work Experience -->
+    <section id="work" class="alt">
+      <div class="container">
+        <div class="copy">
+          <p class="eyebrow mono">Work Experience</p>
+        </div>
+      
+      <div class="work-timeline">
+        <div class="timeline-column dates-column">
+          <div class="timeline-date">
+            <span class="date-start">Jun 2025</span>
+            <span class="date-separator">-</span>
+            <span class="date-end">Aug 2025</span>
+            <div class="tech-pills">
+              <span class="tech-pill">LangGraph</span>
+              <span class="tech-pill">LLM</span>
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">FastAPI</span>
+            </div>
           </div>
-          <div class="kpi">
-            <h3>&gt;90% ✓</h3>
-            <p class="mono">Human‑alignment on evals</p>
+          <div class="timeline-date">
+            <span class="date-start">Apr 2024</span>
+            <span class="date-separator">-</span>
+            <span class="date-end">Aug 2024</span>
+            <div class="tech-pills">
+              <span class="tech-pill">YOLOv8</span>
+              <span class="tech-pill">YamNet</span>
+              <span class="tech-pill">FastAPI</span>
+              <span class="tech-pill">AWS</span>
+            </div>
           </div>
-          <div class="kpi">
-            <h3>2s</h3>
-            <p class="mono">Real‑time latency (CV+Audio)</p>
+          <div class="timeline-date">
+            <span class="date-start">Jul 2023</span>
+            <span class="date-separator">-</span>
+            <span class="date-end">Dec 2023</span>
+            <div class="tech-pills">
+              <span class="tech-pill">CLIP</span>
+              <span class="tech-pill">FAISS</span>
+              <span class="tech-pill">BERT</span>
+              <span class="tech-pill">PySpark</span>
+            </div>
+          </div>
+          <div class="timeline-date">
+            <span class="date-start">Oct 2019</span>
+            <span class="date-separator">-</span>
+            <span class="date-end">Jul 2021</span>
+            <div class="tech-pills">
+              <span class="tech-pill">Java</span>
+              <span class="tech-pill">Spring Boot</span>
+              <span class="tech-pill">PostgreSQL</span>
+            </div>
+          </div>
+          <div class="timeline-date">
+            <span class="date-start">Jan 2019</span>
+            <span class="date-separator">-</span>
+            <span class="date-end">Sep 2019</span>
+            <div class="tech-pills">
+              <span class="tech-pill">Embedded C</span>
+              <span class="tech-pill">OCPP</span>
+              <span class="tech-pill">IoT</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-column line-column">
+          <div class="timeline-line"></div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-dot"></div>
+        </div>
+        
+        <div class="timeline-column cards-column">
+          <div class="work-card">
+            <div class="copy">
+              <h2><span class="grad">ML Intern — EdTech Tulna (IIT Delhi)</span></h2>
+              <div class="container kpi-band">
+                <div class="kpis">
+                  <div class="kpi"><h3>95% ↓</h3><p class="mono">Manual review time</p></div>
+                  <div class="kpi"><h3>&gt;90% ✓</h3><p class="mono">Human‑alignment on evals</p></div>
+                </div>
+              </div>
+              <div class="list bullets">
+                <div><strong>Designed and deployed</strong> a fault-tolerant, production-ready multi-agent AI system with LangGraph to evaluate educational videos on 20+ learning indicators, cutting manual review time by 95% (4 hours to under 10 minutes) and delivering evidence-backed structured docx/pdf reports.</div>
+                <div><strong>Engineered</strong> 2 LLM critic models with structured chain-of-thought prompting and a conflict resolution agent with advanced prompt chaining—boosting rating consistency and accuracy by mitigating single-model bias achieving >90% alignment with expert human evaluations.</div>
+                <div><strong>Developed</strong> an evidence-planning agent using advanced prompting techniques like instruction-following and reasoning transparency to identify critical timestamps, then automated screenshot extraction with FFmpeg, producing reports with verifiable, timestamp-linked visual evidence boosting evaluator trust by 25% compared to text-only reports.</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="work-card">
+            <div class="copy">
+              <h2><span class="grad">ML Intern — KradleJoy Pvt Ltd</span></h2>
+              <div class="container kpi-band">
+                <div class="kpis">
+                  <div class="kpi"><h3>&lt;2s</h3><p class="mono">Real‑time latency (CV+Audio)</p></div>
+                  <div class="kpi"><h3>&gt;90% ✓</h3><p class="mono">occlusion(Real World Conditions)</p></div>
+                </div>
+              </div>
+              <div class="list bullets">
+                <div><strong>Led</strong> development of a real-time multimodal baby monitoring system with sub-2s latency by integrating live video and audio streams into a FastAPI-based ML inference API, deployed on AWS EC2 using Docker to deliver synchronized safety alerts and continuous activity insights.</div>
+                <div><strong>Built</strong> a multimodal spatial understanding module with a fine-tuned YOLOv8 model for baby detection, sleep tracking via sequential pose analysis under 80–90% occlusion, and real-time cry detection using fine-tuned YamNet audio model.</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="work-card">
+            <div class="copy">
+              <h2><span class="grad">Freelance ML Engineer — Self-employed</span></h2>
+              <div class="container kpi-band">
+                <div class="kpis">
+                  <div class="kpi"><h3>&lt;50ms ↓</h3><p class="mono">Latency</p></div>
+                  <div class="kpi"><h3>Real Time</h3><p class="mono">Analytics</p></div>
+                </div>
+              </div>
+              <div class="list bullets">
+                <div><strong>Built</strong> a real-time visual similarity engine using CLIP + FAISS, retrieving similar images from a 60,000+ image database in under 50ms, delivered as an API backend to interactive visual search web UI.</div>
+                <div><strong>Engineered</strong> a real-time sentiment analysis pipeline for a social media analytics dashboard, achieving over 85% classification accuracy and sub-second inference latency by leveraging PySpark for large-scale tweet preprocessing and fine-tuning a Hugging Face BERT model, deployed via FastAPI.</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="work-card">
+            <div class="copy">
+              <h2><span class="grad">Software Engineer (Contract) — Rapid Global School</span></h2>
+              <div class="container kpi-band">
+                <div class="kpis">
+                  <div class="kpi"><h3>2000 +</h3><p class="mono">Users</p></div>
+                </div>
+              </div>
+              <div class="list bullets">
+                <div><strong>Engineered</strong> a modular RESTful API with Java Spring Boot, integrating multiple workflows for school management system over a unified PostgreSQL-backed system for 2000+ users.</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="work-card">
+            <div class="copy">
+              <h2><span class="grad">Graduate Engineer — Exicom Tele-Systems Limited</span></h2>
+              <div class="container kpi-band">
+                <div class="kpis">
+                  <div class="kpi"><h3>12,000 +</h3><p class="mono">Users</p></div>
+                </div>
+              </div>
+              <div class="list bullets">
+                <div><strong>Worked</strong> in a cross-functional team to develop an embedded system for server-client communication between electric vehicle chargers and a central
+                  server based on the OCPP protocol, used by over 21,000 users.</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="card">
-        <img class="avatar" src="https://avatars.githubusercontent.com/u/00000000?v=4" alt="Abhinav avatar placeholder" />
-        <h3 class="mt">Currently</h3>
-        <ul>
-          <li>🎓 MS Data Science @ UMD (’26)</li>
-          <li>🧪 ML Intern @ EdTech Tulna (IITD): multi‑agent video evaluator</li>
-          <li>🏥 SME @ Oracle (CDA/ODA), Order Search APIs</li>
-        </ul>
-        <h3>Focus Areas</h3>
-        <div class="stack">
-          <span class="pill">Agentic AI</span>
-          <span class="pill">Evaluation @ scale</span>
-          <span class="pill">Retrieval & Rerank</span>
-          <span class="pill">Serverless</span>
-          <span class="pill">MLOps</span>
-        </div>
-      </div>
+    </div>
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="section">
-      <h2>Selected Projects</h2>
-      <div class="projects">
-        <!-- Project 1 -->
-        <article class="project">
-          <div>
-            <h3>EdTech Tulna — Multi‑Agent Video Evaluation System</h3>
-            <p>LangGraph + Gemini/OpenAI agents that evaluate 20+ indicators (content accuracy, inclusivity, clarity, etc.), plan evidences, capture screenshots (FFmpeg), and generate DOCX/PDF reports.</p>
-            <div class="meta">
-              <div class="tags">
-                <span>LangGraph</span><span>Gemini</span><span>OpenAI</span><span>FFmpeg</span><span>DOCX</span>
-              </div>
-              <div>
-                <a class="btn ghost" href="#" aria-label="Case study coming soon">Case Study</a>
-                <a class="btn" href="#" aria-label="GitHub repo coming soon">GitHub</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <strong>Impact</strong>
-            <ul>
-              <li>95% reduction in manual review time (4h → &lt;10m)</li>
-              <li>&gt;90% alignment with expert raters via critic + arbiter design</li>
-              <li>Evidence planner reduces hallucinations with timestamped proofs</li>
-            </ul>
-          </div>
-        </article>
-        <!-- Project 2 -->
-        <article class="project">
-          <div>
-            <h3>RAG Serverless Pipeline (S3 → Textract → Bedrock → Pinecone)</h3>
-            <p>Event‑driven knowledge ingestion: chunking, embeddings, namespace tagging, and vector upserts with Step Functions orchestration. Designed for docs, tables, and inline images.</p>
-            <div class="meta">
-              <div class="tags">
-                <span>AWS SAM</span><span>S3</span><span>Step Functions</span><span>Lambda</span><span>Bedrock</span><span>Pinecone</span>
-              </div>
-              <div>
-                <a class="btn ghost" href="#">README</a>
-                <a class="btn" href="#">GitHub</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <strong>Highlights</strong>
-            <ul>
-              <li>Namespace & tagging for multi‑tenant KBs</li>
-              <li>Policy‑driven chunking + windowing</li>
-              <li>Image‑aware pipelines (future: multi‑modal embeddings)</li>
-            </ul>
-          </div>
-        </article>
-        <!-- Project 3 -->
-        <article class="project">
-          <div>
-            <h3>AI‑Powered Jira Backlog Builder</h3>
-            <p>Turns product prompts into initiatives → epics → stories → tasks with Pydantic schemas, field validation against Jira Cloud, and human‑in‑the‑loop review via Streamlit UI.</p>
-            <div class="meta">
-              <div class="tags">
-                <span>LangChain</span><span>Jira Cloud</span><span>Pydantic</span><span>Streamlit</span>
-              </div>
-              <div>
-                <a class="btn" href="#">GitHub</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <strong>Why it matters</strong>
-            <ul>
-              <li>Reduces PM/Eng grooming overhead</li>
-              <li>Real‑time schema compliance</li>
-              <li>Agentic planning that actually ships</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience" class="section">
-      <h2>Experience</h2>
-      <div class="timeline">
-        <div class="item">
-          <h3>Machine Learning Intern — EdTech Tulna, IIT Delhi</h3>
-          <p class="mono">Jul 2025 – Aug 2025 • Delhi (Hybrid)</p>
-          <p>Built the end‑to‑end evaluation system: critic/arbiter agents, evidence planning, screenshot capture, structured reporting.</p>
+    <section id="projects">
+      <div class="container split">
+        <div class="visual card">
+          <svg viewBox="0 0 560 360" class="block-svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="g4" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#f2b8d1"/><stop offset="100%" stop-color="#7c5cff"/>
+              </linearGradient>
+            </defs>
+            <circle cx="160" cy="180" r="110" fill="url(#g4)" opacity="0.85"/>
+            <rect x="260" y="110" width="240" height="140" rx="16" fill="#ffffff" stroke="#e6eaf3"/>
+            <text x="280" y="160" fill="#6a7384" font-size="16" font-family="Inter, sans-serif">Backlog Planner</text>
+            <text x="280" y="190" fill="#2a3340" font-size="22" font-weight="700" font-family="Inter, sans-serif">70% grooming ↓</text>
+          </svg>
         </div>
-        <div class="item">
-          <h3>Sr. Member of Technical Staff — Oracle (Healthcare)</h3>
-          <p class="mono">Sep 2024 – Present • India/US</p>
-          <p>SME for CDA/ODA. Led order‑search flows, semantic indexing, and API reliability. Mentored teams on AI agents for clinical docs.</p>
-        </div>
-        <div class="item">
-          <h3>Research/Projects — UMD & Labs</h3>
-          <p class="mono">2024 – Present</p>
-          <p>Stock movement classification (TransTCN), CLIP‑based visual search, multimodal baby monitor (YOLOv8+YamNet) with sub‑2s latency.</p>
+        <div class="copy">
+          <p class="eyebrow mono">Projects</p>
+          <h2>Planning agents, generative video, and <span class="grad">time‑series risk</span>.</h2>
+          <div class="list bullets">
+            <div><strong>Intelligent Jira Backlog Generator</strong> — LLM agent (GPT‑4o/Gemini 2.5 + LangChain) turns product ideas into Initiatives→Epics→Stories→Tasks with Pydantic schema checks and Jira Cloud v3; Streamlit UI; ~70% planning overhead reduction.</div>
+            <div><strong>Slo‑Mo Video with GAN‑based Interpolation</strong> — U‑Net model generates 480fps from 60fps by inserting 2–8 frames per 0.9s clip.</div>
+            <div><strong>Multi‑Time Series Risk Prediction</strong> — Attention‑enhanced TransTCN forecasting 30 series; +14% F1 over LSTM baselines across 20 years of data.</div>
+          </div>
+          <div class="cta-row">
+            <a class="btn" href="https://github.com/abhinavsingh9714/JIRA-agent/tree/ai_planner" target="_blank" rel="noopener">Jira Agent</a>
+            <a class="btn" href="https://github.com/abhinavsingh9714/StockMovementPredictor/tree/main/prediction" target="_blank" rel="noopener">Risk Forecasting</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Writing -->
-    <section id="writing" class="section">
-      <h2>Writing</h2>
-      <div class="grid two-col">
-        <a class="card" href="#" aria-label="Blog post coming soon">
-          <h3>Intricacies of Visual Search Systems</h3>
-          <p>Educated‑friend deep dive into embeddings, ANN search, and UI signals.</p>
-          <span class="mono">Coming soon →</span>
-        </a>
-        <a class="card" href="#">
-          <h3>Agentic AI: From Prompts to Plans</h3>
-          <p>How I built a Jira planning agent with schema enforcement and retries.</p>
-          <span class="mono">Coming soon →</span>
-        </a>
+    <!-- Skills (Claude-style, orb + pills) -->
+    <section id="skills" class="alt">
+      <div class="container">
+        <p class="eyebrow mono">Skills</p>
+        <h2>Tools I grow with <span class="grad">— evolving over time</span>.</h2>
+        <div class="skills-claude">
+          <!-- Languages -->
+          <article class="sc-card reveal">
+            <header class="sc-head">
+              <div class="sc-orb" aria-hidden="true"></div>
+              <h3>Languages</h3>
+            </header>
+            <div class="sc-body">
+              <div class="sc-pills">
+                <span class="pill">Python</span><span class="pill">SQL</span>
+                <span class="pill">Java</span><span class="pill">C/C++</span>
+                <span class="pill">MATLAB</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ML / DL -->
+          <article class="sc-card reveal">
+            <header class="sc-head">
+              <div class="sc-orb" aria-hidden="true"></div>
+              <h3>ML / DL</h3>
+            </header>
+            <div class="sc-body">
+              <div class="sc-pills">
+                <span class="pill">PyTorch</span><span class="pill">TensorFlow</span>
+                <span class="pill">scikit-learn</span><span class="pill">Hugging Face</span>
+                <span class="pill">LangChain</span><span class="pill">LangGraph</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- MLOps / Systems -->
+          <article class="sc-card reveal">
+            <header class="sc-head">
+              <div class="sc-orb" aria-hidden="true"></div>
+              <h3>MLOps / Systems</h3>
+            </header>
+            <div class="sc-body">
+              <div class="sc-pills">
+                <span class="pill">FastAPI</span><span class="pill">Docker</span>
+                <span class="pill">AWS (EC2)</span><span class="pill">Lambda</span>
+                <span class="pill">Step Functions</span><span class="pill">Spark</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Search & Vectors -->
+          <article class="sc-card reveal">
+            <header class="sc-head">
+              <div class="sc-orb" aria-hidden="true"></div>
+              <h3>Search & Vectors</h3>
+            </header>
+            <div class="sc-body">
+              <div class="sc-pills">
+                <span class="pill">RAG</span><span class="pill">FAISS</span>
+                <span class="pill">Chroma</span><span class="pill">CLIP</span>
+                <span class="pill">Rerank</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="mono skill-tip">I believe in constant learning and growth — this list will keep expanding as I do.</p>
       </div>
     </section>
+
+
+
 
     <!-- Contact -->
-    <section id="contact" class="section card">
-      <h2>Contact</h2>
-      <p>Open to roles in ML/AI (applied research, agents, platform) and to collaborations. For speaking or consulting, reach out.</p>
-      <div class="cta-row">
-        <a class="btn" href="mailto:abhinavschauhan14@gmail.com">abhinavschauhan14@gmail.com</a>
-        <a class="btn ghost" href="https://github.com/abhinavsingh9714" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn ghost" href="https://www.linkedin.com/in/abhinavsingh9714" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn ghost" href="https://medium.com/@abhinavsingh9714" target="_blank" rel="noopener">Blog</a>
+<section id="contact" class="cta">
+  <div class="container cta-inner card">
+    <h2>Let’s build something quietly excellent.</h2>
+    <p>Open to ML/AI roles and collaborations</p>
+
+    <!-- Contact details -->
+    <div class="contact-info">
+      <div>
+        <span class="label">📍 Location</span>
+        <span>College Park, MD, USA</span>
       </div>
-    </section>
+      <div>
+        <span class="label">📞 Phone</span>
+        <a href="tel:+12407916598">+1 (240) 791-6598</a>
+      </div>
+      <div>
+        <a class="btn primary" href="mailto:abhinavschauhan14@gmail.com">Email: abhinavschauhan14@gmail.com</a>
+      </div>
+      <div>
+        <a class="btn primary" href="https://www.linkedin.com/in/abhinavsingh9714" target="_blank" rel="noopener">LinkedIn: abhinavsingh9714</a>
+      </div>
+    </div>
+  </div>
+</section>
+
   </main>
 
-  <footer class="container">
-    <small>© <span id="y"></span> Abhinav. Built with vanilla HTML/CSS. Deployed on GitHub Pages.</small>
-    <div class="footer-actions">
-      <button class="btn ghost" id="themeBtn" aria-pressed="false">Toggle Theme</button>
+  <footer class="site-footer">
+    <div class="container foot">
+      <small>© <span id="y"></span> Abhinav.</small>
+      <button id="themeBtn" class="btn small" aria-pressed="false" title="Toggle dark mode">Theme</button>
     </div>
   </footer>
-
-  <script src="assets/script.js" defer></script>
 </body>
 </html>
